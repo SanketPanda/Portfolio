@@ -170,7 +170,7 @@ a:hover
     text-align: center;
     
   }
-  .portfolio1
+  .portfolio1 , .portfolio5
   {
     background-color: #21364b; 
     padding-bottom: 100px;
@@ -180,7 +180,7 @@ a:hover
   {
     position: relative;
   }
-  .portfolio1 img , .portfolio2 img , .laptopsell img , .imagecontainer img
+  .portfolio1 img , .portfolio2 img , .laptopsell img , .imagecontainer img , .portfolio6 img
   {
     max-width: 970px;
     width: 80%;
@@ -195,19 +195,19 @@ a:hover
     padding-bottom: 100px;
     padding-top: 100px;
   }
-  .portfolio3 , .portfolio5
+  .portfolio3 
   {
     background-color: #679895; 
     padding-bottom: 100px;
     padding-top: 100px;
   }
-  .portfolio4
+  .portfolio4 , .portfolio6
   {
     background-color: #31355b; 
     padding-bottom: 100px;
     padding-top: 100px;
   }
- 
+  
  
 
 
