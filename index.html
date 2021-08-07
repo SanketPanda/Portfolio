@@ -1,106 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sanket Panda</title>
-     <!-- Awesome Fonts -->
-     <script src="https://kit.fontawesome.com/ebfb087570.js" crossorigin="anonymous"></script>
-    <!--BootStrap Link-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-    
-    
-        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
-</head>
+        <link rel="stylesheet" href="assets/css/style.css">
 
-<body>
-    <nav class="navbar navbar-expand-lg" id="fixed-header">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fas fa-bars"></i>
-          </button>
-        
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link active" href="">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="work.html">Work</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://www.reddit.com/user/Sanketpanda">Blogs</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <div class="top-container">
-        
-        <img class="top-cloud" src="images/cloud.svg" alt="cloud image">
-        <h1>I'am Sanket.</h1>
-        <p>A Programmer</p>
-        <img class="bottom-cloud" src="images/cloud.svg" alt="cloud image">
-        <img class="mountain-img" src="http://seanhalpin.io/assets/img/content/home/masthead/land.svg" alt="mountain image">
-    </div>
-    <div class="middle-container">
-        <div class="profile">
-            <img class="profile-img" src="images/profile.png" alt="profile-image">
-            <h2>Hello.</h2>
-            <p class="intro">I am an Unity3d and Web Developer. I have a passion for web development and love to create
-                games and augmented , virtual reality applications.</p>
-        </div>
-        <hr>
-        <div class="skills">
-            <h2>My Skills</h2>
-            <div class="skill-row">
-                <img class="code-img" src="images/worker.png" alt="chilli-img">
-                <h3>Design & Development</h3>
-                <p>I started learning to code when i was 17 years old because i wanted to make
-                    my own website and video games. Over time, i have gained a wealth of experience
-                    designing and developing web application and AR VR applications.
-                </p>
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Sanket Panda</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Sanket Panda</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <img class="profileImg" src="assets/img/Sanket.png" alt="">
+                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Sanket Panda</span><br> Full Stack Developer</h1>
+                    <p class="home_description">High level experience in web, mobile application developmet, producing quality work</p>
+                    <a href="#" class="button">Contact</a>
+                </div>
+
+                 
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/office.jpg" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">I'am Sanket</h2>
+                        <p class="about__text">Web developer with 3+ years of experience working in web technologies and Unity3d, delivering quality work to clients across the globe.</p>           
+                        <div class="aboutDetails" style="display: flex;">
+                        <h3>
+                            3 + 
+                          <p>Years Experience</p>  
+                        </h3>
+                        <h3>
+                            20 +
+                            <p> Completed Projects</p>
+                        </h3>
+                        <h3>
+                            10 +
+                            <p> Clients Worked</p>
+                        </h3>
+                    </div>
+                    </div> 
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+
+                <div class="skills__container bd-grid">          
+                    <div>
+                        <h2 class="skills__subtitle">Profesional Skills</h2>
+                        <p class="skills__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio id vero amet, alias architecto consectetur error eum eaque sit.</p>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-html5 skills__icon'></i>
+                                <span class="skills__name">HTML5</span>
+                            </div>
+                            <div class="skills__bar skills__html">
+
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-css3 skills__icon'></i>
+                                <span class="skills__name">CSS3</span>
+                            </div>
+                            <div class="skills__bar skills__css">
+                                
+                            </div>
+                            
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-javascript skills__icon' ></i>
+                                <span class="skills__name">JAVASCRIPT</span>
+                            </div>
+                            <div class="skills__bar skills__js">
+                                
+                            </div>
+                            
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <img class="bx skills__icon" style="width: 2rem;" src="https://img.icons8.com/color/48/000000/angularjs.png"/>
+                                <span class="skills__name">AngularJS</span>
+                            </div>
+                            <div class="skills__bar skills__ux">
+                                
+                            </div>
+                            
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <img class="bx skills__icon" style="width: 2rem;" src="assets/img/unity3d.png"/>
+                                <span class="skills__name">Unity3D</span>
+                            </div>
+                            <div class="skills__bar skills__ux">
+                                
+                            </div>
+                            
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <img class="bx skills__icon" style="width: 2rem;" src="assets/img/servicenow.png"/>
+                                <span class="skills__name">ServiceNow</span>
+                            </div>
+                            <div class="skills__bar skills__ux">
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div>              
+                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
+                    </div>
+                </div>
+            </section>
+
+            <!--===== WORK =====-->
+            <section class="work section" id="work">
+                <h2 class="section-title">Work</h2>
+
+                <div class="work__container bd-grid">
+                    <div class="work__img">
+                        <img src="assets/img/work1.jpg" alt="">
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/work2.jpg" alt="">
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/work3.jpg" alt="">
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/work4.jpg" alt="">
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/work5.jpg" alt="">
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/work6.jpg" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+
+                <div class="contact__container bd-grid">
+                    <form action="" class="contact__form">
+                        <input type="text" placeholder="Name" class="contact__input">
+                        <input type="mail" placeholder="Email" class="contact__input">
+                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <input type="button" value="Email" class="contact__button button">
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Sanket</p>
+            <div class="footer__social">
+                <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
             </div>
-            <div class="skill-row">
-                <img class="chilli-img" src="images/student.png" alt="">
-                <h3>Training & Guidance</h3>
-                <p>I started teaching students from my graduation as a part time job and
-                    developed a great intrest towards teaching and sharing knowledge to others.After having
-                    a good experience in programming i make<a
-                        href="https://www.reddit.com/user/Sanketpanda">blogs</a>and tutorials on different topic and
-                    share
-                    my knowledge with others.
-                </p>
-            </div>
-        </div>
-        <hr>
-        <div class="contact-me">
-            <h2>How can I help?</h2>
-            <h3>With my experience I can:</h3>
-            <p class="contact-message">Create responsive websites that work on a wide range of devices
-                and make 2d games, augmented , virtual reality applications starting from design to development.
-            </p>
-            <h3>I'm currently available for freelance work.</h3>
-            <a class="btn" href="mailto:sanketpanda55.sp@gmail.com">CONTACT ME</a>
-        </div>
-    </div>
-    <div class="bottom-container">
-        <a class="footer-link" href="https://www.instagram.com/sanket.panda/">Instagram</a>
-        <a class="footer-link" href="">Twiter</a>
-        <p class="copyright"> © 2018 <a href="">Sanket Panda</a>.All rights reserved</p>
-    </div>
+            <p>&#169; 2021 copyright all right reserved</p>
+        </footer>
 
 
-</body>
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
 
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
