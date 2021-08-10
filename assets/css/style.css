@@ -202,6 +202,7 @@ img{
 .home_description{
   font-size: 1.2rem;
   margin-bottom: var(--mb-5);
+  width: 45rem;
 }
 .home__social{
   display: flex;
@@ -396,7 +397,8 @@ img{
     height: 100vh;
   }
   .home__data{
-    align-self: flex-end;
+    align-self: flex-start;
+    padding-top: 10rem;
   }
   .home__social{
     padding-top: 0;
@@ -461,4 +463,7 @@ img{
 .aboutDetails h3, .aboutDetails p{
   padding: 2rem;
   padding-top: 0;
+}
+.work__container:nth-child(5) > img {
+  animation-delay: 3s;
 }
