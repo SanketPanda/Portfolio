@@ -312,7 +312,52 @@ img{
 .work__img img{
   transition: 1s;
   cursor: pointer;
+  width: auto;
 }
+.taleup ul {
+  position: relative;
+  width: 100%
+}
+.taleup li {
+  position: absolute;
+  width: 100%;
+}
+
+.taleup img {
+  width: 100%;
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-fill-mode:backwards;
+}
+
+
+li:nth-child(2) > img {
+  animation-delay: 3s;
+}
+
+li:nth-child(3) > img {
+  animation-delay: 6s;
+}
+
+li:nth-child(4) > img {
+  animation-delay: 9s;
+}
+
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  
+  to {
+    opacity: 1;
+  }
+}
+
+
 .work__img img:hover{
   transform: scale(1.1);
 }
