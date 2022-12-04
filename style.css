@@ -230,7 +230,7 @@ section .title::after{
 .about .about-content .right p{
     text-align: justify;
 }
-.about .about-content .right a{
+.about .about-content .right .my-cv{
     display: inline-block;
     background: crimson;
     color: #fff;
@@ -242,7 +242,7 @@ section .title::after{
     border: 2px solid crimson;
     transition: all 0.3s ease;
 }
-.about .about-content .right a:hover{
+.about .about-content .right .my-cv:hover{
     color: crimson;
     background: none;
 }
@@ -662,4 +662,8 @@ footer span a:hover{
 .soc {
     display: inline-block;
     margin: 4px;
+}
+
+.links{
+    color: crimson;
 }
