@@ -16,9 +16,10 @@ $(document).ready(function(){
     });
     // slide-up script
     $('.scroll-up-btn').click(function(){
-        $('html').animate({scrollTop: 0});
-        // removing smooth scroll on slide-up button click
-        $('html').css("scrollBehavior", "auto");
+        console.log('scroll to top');
+        $('html').css("scrollBehavior", "smooth");
+        $('body').animate({scrollTop: 0}, 500);
+        
     });
     $('.navbar .menu li a').click(function(){
         // applying again smooth scroll on menu items click
@@ -31,17 +32,17 @@ $(document).ready(function(){
     });
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["YouTuber", "Developer", "Blogger", "Designer", "Freelancer"],
+        strings: ["Developer", "YouTuber"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
-    var typed = new Typed(".typing-2", {
-        strings: ["YouTuber", "Developer", "Blogger", "Designer", "Freelancer"],
-        typeSpeed: 100,
-        backSpeed: 60,
-        loop: true
-    });
+    // var typed = new Typed(".typing-2", {
+    //     strings: ["Developer", "YouTuber"],
+    //     typeSpeed: 100,
+    //     backSpeed: 60,
+    //     loop: true
+    // });
     // owl carousel script
     $('.carousel').owlCarousel({
         margin: 20,
@@ -65,3 +66,9 @@ $(document).ready(function(){
         }
     });
 });
+
+ function sendEmail(){
+    var subject = document.getElementById("subject").value;
+    var message = document.getElementById("message").value;
+    window.open(`mailto:sanketpanda55.sp@gmail.com?subject=${subject}&body=${message}`)
+}
