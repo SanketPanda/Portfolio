@@ -37,13 +37,6 @@ $(document).ready(function(){
         backSpeed: 60,
         loop: true
     });
-    // var typed = new Typed(".typing-2", {
-    //     strings: ["Developer", "YouTuber"],
-    //     typeSpeed: 100,
-    //     backSpeed: 60,
-    //     loop: true
-    // });
-    // owl carousel script
     $('.carousel').owlCarousel({
         margin: 20,
         loop: true,
