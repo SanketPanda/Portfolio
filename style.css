@@ -673,3 +673,9 @@ footer span a:hover{
     color: #00ff97;
     cursor: pointer;
 }
+
+.footer{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
